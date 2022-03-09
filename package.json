@@ -1,0 +1,29 @@
+{
+  "name": "food-festival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "webpack": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdpasternak/food-festival.git"
+  },
+  "author": "Jake Pasternak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdpasternak/food-festival/issues"
+  },
+  "homepage": "https://github.com/jdpasternak/food-festival#readme",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.6.0"
+  }
+}
