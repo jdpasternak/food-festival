@@ -50,14 +50,9 @@ self.addEventListener("fetch", function (e) {
   console.log("fetch request : " + e.request.url);
   e.respondWith(
     caches.match(e.request).then(function (request) {
-      console.dir(request);
       if (request) {
         // if cache is available, respond with cache
         console.log("responding with cache : " + e.request.url);
-        urlParts = request.url.split("/");
-        if (urlParts[urlParts.length - 1] === "") {
-          request.url = request.url + "index.html";
-        }
         return request;
       } else {
         // if there are no cache, try fetching request
